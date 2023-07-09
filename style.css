@@ -1,0 +1,153 @@
+body {
+  background-color: #0b1d26;
+  margin: 0px;
+  background-size: 100% auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  -height: 1.5;
+  color: aliceblue;
+}
+
+/* HEADER*/
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.nav li + li {
+  text-align: center;
+  margin-left: 40px;
+}
+
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a {
+  position: relative;
+  color: aliceblue;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1.5px;
+  background-color: aliceblue;
+}
+
+a:hover:before {
+  width: 100%;
+}
+
+a::before {
+  transition: width 0.35s;
+}
+
+/* MAIN */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+
+.about-me-text {
+  padding-left: 20px;
+}
+
+.about-me-img {
+  display: flex;
+  justify-content: center;
+}
+
+.foto {
+  width: 60%;
+}
+
+.title-span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.container-num2{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+}
+
+.Skills{
+  padding-left: 20px;
+  text-align: center;
+}
+
+.My-Contact-Info{
+  justify-content: center;
+}
+
+.contact{
+  list-style-type: none;
+
+}
+
+.Contact-Info{
+  text-align: center
+
+}
+
+
+/* FOOTER*/
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+}
+
+
+.footer-conteiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  
+
+}
+
+.rss {
+  width: 121px;
+  height: 45px;
+  padding-right: 20px;
+  background-image: url(./Img/Без-названия.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a.rss::before{
+  content: none;
+}
